@@ -1,0 +1,60 @@
+.slider {
+  background-color: rgb(0, 0, 0);
+  width: 700px;
+  height: 400px;
+  overflow: hidden;
+  margin: 0 auto;
+  position: relative;
+  img {
+    height: 100%;
+    margin: 0 auto;
+    display: block;
+  }
+  .btn {
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    width: 40%;
+    height: 100%;
+    font-size: 40px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    user-select: none;
+    opacity: 0.2;
+    transition: all 0.7s;
+    padding: 0 3%;
+   // z-index: 1;
+    &:hover {
+      opacity: 1;
+      transition: all 0.7s;
+    }
+    &_next {
+      right: 0px;
+      top: 0px;
+      justify-content: flex-end;
+    }
+  }
+}
+.control {
+  position: absolute;
+  display: flex;
+  color: white;
+  height: 10%;
+  width: 100%;
+  border: 1px solid red;
+  bottom: 0px;
+  align-items: center;
+  justify-content: center;
+  & > * {
+    border: 1px solid green;
+    cursor: pointer;
+  }
+  .delayChose {
+    display: flex;
+  }
+}
+.full{
+    min-width: 100vw;
+    min-height: 100vh;
+}
